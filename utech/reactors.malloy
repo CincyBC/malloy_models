@@ -1,0 +1,22 @@
+source: pris_reactors is utech.table('gov_org.pris_reactors') extend {
+    primary_key: pris_id
+    measure: total_reactors is count()
+    measure: total_operational_reactors is count() { where: reactor_current_status = "Operational" }
+
+    measure: current_gross_capacity_mw is sum(gross_capacity) { where: reactor_current_status = "Operational"}
+}
+
+run: pris_reactors -> {
+  group_by: countries_name
+  aggregate: current_gross_capacity_mw
+}
+
+run: pris_reactors -> {
+  group_by: countries_name
+  aggregate: total_reactors
+}
+
+run: pris_reactors -> {
+  group_by: countries_name
+  aggregate: total_operational_reactors
+}
