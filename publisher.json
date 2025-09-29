@@ -1,0 +1,14 @@
+{
+  "frozenConfig": false,
+  "projects": [
+    {
+      "name": "utech",
+      "packages": [
+        {
+          "name": "utech",
+          "location": "https://github.com/CincyBC/malloy_models"
+        }
+      ]
+    }
+  ]
+}
