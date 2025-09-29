@@ -6,18 +6,18 @@
       "packages": [
         {
           "name": "utech",
-          "location": "https://github.com/CincyBC/malloy_models/utech"
-        }
-      ]
-    },
-        {
-      "name": "hamco",
-      "packages": [
-        {
-          "name": "hamco",
-          "location": "https://github.com/CincyBC/malloy_models/hamco"
+          "location": "https://github.com/CincyBC/malloy_models"
         }
       ]
     }
+    //     {
+    //   "name": "hamco",
+    //   "packages": [
+    //     {
+    //       "name": "hamco",
+    //       "location": "https://github.com/CincyBC/malloy_models"
+    //     }
+    //   ]
+    // }
   ]
 }
