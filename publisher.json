@@ -10,8 +10,7 @@
         }
       ],
       "malloyConnections": {
-        "utech": {},
-        "hamco": {}
+        "utech": {"type": "postgres"}
       }
     }
   ]
