@@ -12,6 +12,18 @@
       "malloyConnections": {
         "utech": {"type": "postgres"}
       }
+    },
+        {
+      "name": "hamco",
+      "packages": [
+        {
+          "name": "hamco",
+          "location": "https://github.com/CincyBC/malloy_models"
+        }
+      ],
+      "malloyConnections": {
+        "utech": {"type": "postgres"}
+      }
     }
   ]
 }
