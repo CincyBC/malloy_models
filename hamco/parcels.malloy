@@ -1,1 +1,0 @@
-source: addresses is hamco.table('auditor.addresses') 
