@@ -8,10 +8,7 @@
           "name": "utech",
           "location": "https://github.com/CincyBC/malloy_models"
         }
-      ],
-      "malloyConnections": {
-        "utech": {"type": "postgres"}
-      }
+      ]
     },
         {
       "name": "hamco",
@@ -20,10 +17,7 @@
           "name": "hamco",
           "location": "https://github.com/CincyBC/malloy_models"
         }
-      ],
-      "malloyConnections": {
-        "utech": {"type": "postgres"}
-      }
+      ]
     }
   ]
 }
