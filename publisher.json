@@ -6,7 +6,7 @@
       "packages": [
         {
           "name": "utech",
-          "location": "https://github.com/CincyBC/malloy_models"
+          "location": "https://github.com/CincyBC/malloy_models/utech"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "packages": [
         {
           "name": "hamco",
-          "location": "https://github.com/CincyBC/malloy_models"
+          "location": "https://github.com/CincyBC/malloy_models/hamco"
         }
       ]
     }
