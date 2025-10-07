@@ -1,0 +1,24 @@
+>>>markdown
+# UTECH Malloy Models
+>>>markdown
+## Prices
+### Average Uranium Price by Month
+>>>malloy
+import "uranium.malloy"
+# line_chart
+run: uranium_price -> {
+  group_by: `month` is `date`.month
+  aggregate: avg_price
+}
+>>>malloy
+## Reactors
+### Top 10 Countries by Operational Reactors
+>>>malloy
+import "reactors.malloy"
+# bar_chart
+run: pris_reactors -> {
+  group_by: countries_name
+  aggregate: total_operational_reactors
+  limit: 10
+  order_by: total_operational_reactors desc
+}
