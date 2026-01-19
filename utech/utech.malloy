@@ -1,5 +1,6 @@
 # UTECH Main Model
-# Central file that re-exports all UTECH data sources
+# Central file that imports all UTECH data sources
 
-source: pris_reactors is from("reactors.malloy")
-source: uranium_price is from("uranium.malloy")
+import "reactors.malloy"
+import "uranium.malloy"
+
