@@ -1,9 +1,11 @@
 source: uranium_price is utech.table('public.numerco_daily_price') extend {
     measure: avg_price is avg(price)
-}
 
-run: uranium_price -> {
-  group_by: `month` is `date`.month
-  aggregate: avg_price
+    # Named query for reuse
+    query: monthly_avg_price is {
+        group_by: `month` is `date`.month
+        aggregate: avg_price
+        order_by: `month` asc
+    }
 }
 

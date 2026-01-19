@@ -1,24 +1,31 @@
 >>>markdown
 # UTECH Malloy Models
+A collection of Malloy models for analyzing uranium prices and nuclear reactor data.
+
 >>>markdown
 ## Prices
 ### Average Uranium Price by Month
 >>>malloy
-import "uranium.malloy"
+import {uranium_price} from "uranium.malloy"
 # line_chart
-run: uranium_price -> {
-  group_by: `month` is `date`.month
-  aggregate: avg_price
-}
->>>malloy
+run: uranium_price -> monthly_avg_price
+
+>>>markdown
 ## Reactors
 ### Top 10 Countries by Operational Reactors
 >>>malloy
-import "reactors.malloy"
+import {pris_reactors} from "reactors.malloy"
 # bar_chart
-run: pris_reactors -> {
-  group_by: countries_name
-  aggregate: total_operational_reactors
-  limit: 10
-  order_by: total_operational_reactors desc
-}
+run: pris_reactors -> top_countries
+
+>>>markdown
+### Current Gross Capacity by Country
+>>>malloy
+# bar_chart
+run: pris_reactors -> country_capacity + { limit: 10 }
+
+>>>markdown
+### Total Reactors by Country
+>>>malloy
+# bar_chart
+run: pris_reactors -> country_total + { limit: 10 }
