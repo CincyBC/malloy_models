@@ -1,5 +1,5 @@
-# UTECH Main Model
-# Central file that imports all UTECH data sources
+// UTECH Main Model
+// Central file that imports all UTECH data sources
 
 import "reactors.malloy"
 import "uranium.malloy"
